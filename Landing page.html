@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Biru Dongker</title>
+    <style>
+        /* Reset dan Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #0B1C3F; /* Warna utama: Biru Dongker */
+            color: #FFFFFF;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
+        /* Header / Navbar */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #061126; /* Biru dongker yang lebih gelap untuk header */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: #4DA8DA; /* Aksen biru muda */
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li a {
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #4DA8DA; 
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 120px 20px;
+            background: linear-gradient(135deg, #0B1C3F 0%, #15326D 100%);
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            color: #B0C4DE; /* Light steel blue agar tidak terlalu silau */
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .btn-cta {
+            display: inline-block;
+            padding: 15px 35px;
+            background-color: #FACC15; /* Warna aksen kuning/emas */
+            color: #061126;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: transform 0.2s ease, background 0.3s ease;
+        }
+        .btn-cta:hover {
+            background-color: #EAB308;
+            transform: translateY(-3px); /* Efek tombol terangkat */
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 80px 50px;
+            background-color: #0F2756; /* Variasi biru dongker */
+            flex-wrap: wrap;
+        }
+        .feature-card {
+            background-color: #15326D;
+            padding: 40px 30px;
+            border-radius: 12px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        .feature-card h3 {
+            margin-bottom: 15px;
+            color: #4DA8DA;
+            font-size: 22px;
+        }
+        .feature-card p {
+            color: #D1D5DB;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #061126;
+            font-size: 14px;
+            color: #8892B0;
+        }
+
+        /* Responsiveness untuk tampilan HP */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+            .hero h1 {
+                font-size: 32px;
+            }
+            .hero {
+                padding: 80px 20px;
+            }
+            .features {
+                flex-direction: column;
+                align-items: center;
+                padding: 50px 20px;
+            }
+            .feature-card {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">WebBiru.</div>
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Layanan</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Solusi Digital yang Elegan</h1>
+        <p>Tingkatkan kehadiran online bisnis Anda dengan desain web yang modern, profesional, dan responsif. Dirancang khusus untuk memberikan kenyamanan ekstra.</p>
+        <a href="#" class="btn-cta">Mulai Proyek</a>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>Desain Modern</h3>
+            <p>Tampilan antarmuka yang bersih dengan paduan warna biru dongker yang profesional dan tidak membosankan.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Super Responsif</h3>
+            <p>Sempurna di semua perangkat. Tampilan akan beradaptasi secara otomatis di layar desktop, tablet, maupun smartphone.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Kinerja Cepat</h3>
+            <p>Struktur kode HTML dan CSS yang ringan membuat situs Anda dimuat dalam sekejap mata.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 WebBiru. Dibuat dengan format HTML simpel.</p>
+    </footer>
+
+</body>
+</html>
